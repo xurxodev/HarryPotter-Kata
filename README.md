@@ -1,27 +1,53 @@
-# RomanNumerals-Kata
-RomanNumerals kata for practice TDD implemented in Java and Swift by Jorge Sánchez (Xurxodev) 
+# HarryPotter-Kata
+HarryPotter kata for practice TDD implemented in Java by Jorge Sánchez (Xurxodev) 
 
 ##Problem Description
 
-The Romans were a clever bunch. They conquered most of Europe and ruled it for hundreds of years. They invented concrete and straight roads and even bikinis[1]. One thing they never discovered though was the number zero. This made writing and dating extensive histories of their exploits slightly more challenging, but the system of numbers they came up with is still in use today. For example the BBC uses Roman numerals to date their programmes.
+To try and encourage more sales of the 5 different Harry
+Potter books they sell, a bookshop has decided to offer
+discounts of multiple-book purchases.
 
-The Romans wrote numbers using letters - I, V, X, L, C, D, M. (notice these letters have lots of straight lines and are hence easy to hack into stone tablets)
+One copy of any of the five books costs 8 EUR.
 
-The Kata says you should write a function to convert from normal numbers to Roman Numerals: eg
+If, however, you buy two different books, you get a 5%
+discount on those two books.
 
-     1 --> I
-     10 --> X
-     7 --> VII
-etc.
-For a full description of how it works, take a look at [this useful reference website](http://www.novaroma.org/via_romana/numbers.html): which includes an implementation of the Kata in javascript.
+If you buy 3 different books, you get a 10% discount.
 
-There is no need to be able to convert numbers larger than about 3000. (The Romans themselves didn't tend to go any higher)
+If you buy 4 different books, you get a 20% discount.
 
-Note that you can't write numerals like "IM" for 999. Wikipedia says: Modern Roman numerals ... are written by expressing each digit separately starting with the left most digit and skipping any digit with a value of zero. To see this in practice, consider the ... example of 1990. In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC. 2008 is written as 2000=MM, 8=VIII; or MMVIII.
+If you go the whole hog, and buy all 5, you get a huge 25%
+discount.
 
-Part II of the Kata
+Note that if you buy, say, four books, of which 3 are
+different titles, you get a 10% discount on the 3 that
+form part of a set, but the fourth book still costs 8 EUR.
 
-Write a function to convert in the other direction, ie numeral to digit
+Your mission is to write a piece of code to calculate the
+price of any conceivable shopping basket (containing only
+Harry Potter books), giving as big a discount as possible.
+
+For example, how much does this basket of books cost?
+
+2 copies of the first book
+2 copies of the second book
+2 copies of the third book
+1 copy of the fourth book
+1 copy of the fifth book
+
+Answer: 51.60 EUR
+
+|  I  |  II  | III |  IV  |  V  |          Formula          |  Price  |
+|-----|------|-----|------|-----|---------------------------|---------|
+|  1  |      |     |      |     |     1 * 8                 |  8.00   |
+|  1  |  1   |     |      |     |     2 * 8 * 0.95          |  15.20  |
+|  1  |  1   |  1  |      |     |     3 * 8 * 0.9           |  21.60  |
+|  1  |  1   |  1  |  1   |     |     4 * 8 * 0.8           |  25.60  |
+|  1  |  1   |  1  |  1   |  1  |     5 * 8 * 0.75          |  30.00  |
+|  2  |      |     |      |     |     2 * 8                 |  16.00  |
+|  2  |  1   |     |      |     |     2 * 8 * 0.95 + 1 * 8  |  23.20  |
+|  2  |  1   |  1  |      |     |     3 * 8 * 0.90 + 1 * 8  |  29.60  |
+|  2  |  2   |  2  |  1   |  1  | 4 * 8 * 0.8 + 4 * 8 * 0.8 |  51.20  |
 
 ##Developed By
 
