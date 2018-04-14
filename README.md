@@ -1,7 +1,7 @@
 # HarryPotter-Kata
 HarryPotter kata for practice TDD implemented in Java by Jorge Sánchez (Xurxodev) 
 
-##Problem Description
+## Problem Description
 
 To try and encourage more sales of the 5 different Harry
 Potter books they sell, a bookshop has decided to offer
@@ -49,11 +49,11 @@ Answer: 51.20 EUR
 |  2  |  1   |  1  |      |     |     3 * 8 * 0.90 + 1 * 8  |  29.60  |
 |  2  |  2   |  2  |  1   |  1  | 4 * 8 * 0.8 + 4 * 8 * 0.8 |  51.20  |
 
-##Developed By
+## Developed By
 
 * Jorge Sánchez Fernández aka [xurxodev](https://twitter.com/xurxodev)
 
-##License
+## License
 
 
     Copyright 2016 Jorge Sánchez Fernández
